@@ -437,11 +437,11 @@ input, select, textarea { font-family: inherit; }
 }
 
 .hero-desc {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--text-3);
   line-height: 1.8;
   margin-bottom: 36px;
-  max-width: 520px;
+  max-width: 100%;
 }
 
 .hero-actions {
@@ -661,7 +661,7 @@ input, select, textarea { font-family: inherit; }
 }
 
 .about-photo-placeholder {
-  width: 180px; height: 180px;
+  width: 160px; height: 160px;
   background: var(--btn-grad);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
@@ -670,7 +670,7 @@ input, select, textarea { font-family: inherit; }
 }
 .photo-initials {
   font-family: var(--font-display);
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   color: white;
   position: relative; z-index: 1;
@@ -706,8 +706,8 @@ input, select, textarea { font-family: inherit; }
 
 .about-stats-mini {
   display: grid; grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  padding: 24px;
+  gap: 12px;
+  padding: 16px;
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-lg);
@@ -1042,17 +1042,20 @@ input, select, textarea { font-family: inherit; }
 }
 
 .why-item {
-  display: flex; gap: 20px;
-  padding: 28px 32px;
-  border-right: 1px solid var(--border);
+  display: flex; gap: 16px;
+  padding: 20px 16px;
+  border-right: none;
   border-bottom: 1px solid var(--border);
   transition: all var(--transition);
 }
+.why-item:last-child { border-bottom: none; }
+/* override for 2-col layout */
 .why-item:nth-child(even) {
   border-right: none;
 }
 .why-item:nth-last-child(-n+1) { border-bottom: none; }
 @media (min-width: 768px) {
+  .why-item { padding: 28px 24px; }
   .why-item:nth-child(odd) { border-right: 1px solid var(--border); }
   .why-item:nth-child(even) { border-right: none; }
   .why-item:nth-last-child(-n+2) { border-bottom: none; }
@@ -1813,22 +1816,29 @@ a.cinfo-value:hover { color: var(--secondary); }
 
 /* ── Extra small phones (< 400px) ── */
 @media (max-width: 400px) {
-  .hero-title { font-size: clamp(1.8rem, 8vw, 2.4rem); }
-  .btn-large  { padding: 14px 20px; font-size: 0.9rem; }
+  .hero-title { font-size: clamp(1.7rem, 8vw, 2.2rem); }
+  .btn-large  { padding: 13px 18px; font-size: 0.88rem; }
+  .btn { font-size: 0.85rem; padding: 11px 18px; }
   .stat-divider { display: none; }
   .stat-item { padding: 0 8px; }
   .section-title { font-size: clamp(1.5rem, 7vw, 2rem); }
   .hero-container { padding: 40px 16px; }
-  .container { padding: 0 16px; }
-  .pricing-card { padding: 28px 20px; }
-  .feature-card, .service-card { padding: 20px 16px; }
-  .project-info { padding: 20px 16px; }
-  .why-item { padding: 24px 16px; }
-  .process-step { padding: 24px 16px; }
-  .faq-question { padding: 16px; }
-  .faq-answer p { padding: 0 16px 16px; }
-  .contact-grid { gap: 32px; }
-  .footer-container { padding: 0 16px; }
+  .container { padding: 0 14px; }
+  .pricing-card { padding: 24px 16px; }
+  .feature-card, .service-card { padding: 18px 14px; }
+  .project-info { padding: 18px 14px; }
+  .why-item { padding: 18px 12px; gap: 12px; }
+  .why-number { font-size: 1.5rem; min-width: 36px; }
+  .process-step { padding: 20px 14px; }
+  .faq-question { padding: 14px 16px; font-size: 0.9rem; }
+  .faq-answer p { padding: 0 14px 14px; }
+  .contact-grid { gap: 28px; }
+  .footer-container { padding: 0 14px; }
   .form-actions { flex-direction: column; }
   .form-actions .btn { width: 100%; justify-content: center; }
+  .hero-badge { font-size: 0.75rem; padding: 6px 12px; }
+  .section-label { font-size: 0.72rem; }
+  .nav-logo .logo-name { display: none; }
+  .services-cta { padding: 24px 16px; }
+  .portfolio-cta, .why-cta, .process-cta { padding: 0 16px; }
 }
