@@ -1901,7 +1901,7 @@ a.cinfo-value:hover { color: var(--secondary); }
 }
 
 /* Apply Glassmorphism to Cards */
-.feature-card, .service-card, .pricing-card, .project-card, .test-card, .why-item, .process-step, .about-stats-mini, .contact-card {
+.feature-card, .service-card, .pricing-card, .project-card, .test-card, .why-item, .process-step, .about-stats-mini, .contact-card, .mobile-menu {
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
 }
