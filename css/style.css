@@ -84,12 +84,9 @@ input, select, textarea { font-family: inherit; }
 .loader-inner { text-align: center; }
 
 .loader-logo {
-  font-family: var(--font-display);
-  font-size: 3rem;
-  font-weight: 700;
-  color: white;
   margin-bottom: 2rem;
-  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
 }
 
 .loader-bar {
@@ -232,18 +229,90 @@ input, select, textarea { font-family: inherit; }
   font-size: 1.1rem;
   flex-shrink: 0;
 }
-.logo-mark {
-  width: 36px; height: 36px;
-  background: var(--btn-grad);
-  color: white;
-  border-radius: var(--radius-sm);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 0.85rem;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-}
 .logo-name { color: var(--text-1); }
 .logo-accent { color: var(--secondary); }
+
+/* Custom 3D Logo */
+.ha-3d-logo {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  cursor: pointer;
+}
+.ha-3d-logo:hover {
+  transform: rotateY(15deg) rotateX(10deg) scale(1.05);
+}
+
+.ha-bg {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #1a2f22; /* Deep forest green */
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5), 0 4px 10px rgba(0,0,0,0.2);
+  transform: translateZ(0px);
+}
+
+.ha-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #d2af67; /* Gold */
+}
+.ha-ring.outer {
+  width: 86%; height: 86%;
+  transform: translateZ(3px);
+}
+.ha-ring.inner {
+  width: 76%; height: 76%;
+  transform: translateZ(6px);
+}
+
+.ha-text-h, .ha-text-a {
+  position: absolute;
+  font-size: 26px;
+  line-height: 1;
+  top: 50%;
+  margin-top: -14px;
+}
+.ha-text-h {
+  color: #f7eedb; /* Cream */
+  left: 50%;
+  transform: translateX(-55%) translateZ(10px);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.ha-text-a {
+  color: #d2af67; /* Gold */
+  left: 50%;
+  transform: translateX(-5%) translateZ(16px);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Loader Logo Variations */
+.ha-3d-logo.large {
+  width: 120px; height: 120px;
+}
+.ha-3d-logo.large .ha-text-h, .ha-3d-logo.large .ha-text-a {
+  font-size: 72px;
+  margin-top: -40px;
+}
+.ha-3d-logo.large .ha-text-h { transform: translateX(-55%) translateZ(20px); }
+.ha-3d-logo.large .ha-text-a { transform: translateX(-5%) translateZ(32px); }
+.ha-3d-logo.large .ha-ring { border-width: 2px; }
+
+@keyframes spinLogo3D {
+  0% { transform: rotateY(-20deg) rotateX(10deg); }
+  50% { transform: rotateY(20deg) rotateX(-5deg); }
+  100% { transform: rotateY(-20deg) rotateX(10deg); }
+}
+.ha-3d-logo.large {
+  animation: spinLogo3D 4s infinite ease-in-out;
+}
 
 .nav-links {
   display: none;
