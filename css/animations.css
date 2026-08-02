@@ -1,0 +1,182 @@
+/* =========================================================
+   ANIMATIONS — Fade, Scale, Slide, Scroll effects
+   ========================================================= */
+
+/* ──────────────── SCROLL REVEAL ──────────────── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1),
+              transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-up-delay {
+  transition-delay: 0.15s;
+}
+
+/* ──────────────── STAGGER CHILDREN ──────────────── */
+.features-grid.visible .feature-card,
+.services-grid.visible .service-card,
+.portfolio-grid.visible .project-card,
+.why-me-grid.visible .why-me-card,
+.process-timeline.visible .process-step,
+.why-grid.visible .why-item,
+.faq-list.visible .faq-item {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: staggerIn 0.6s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+
+.features-grid.visible .feature-card:nth-child(1),
+.services-grid.visible .service-card:nth-child(1),
+.portfolio-grid.visible .project-card:nth-child(1),
+.why-me-grid.visible .why-me-card:nth-child(1),
+.process-timeline.visible .process-step:nth-child(1),
+.faq-list.visible .faq-item:nth-child(1)     { animation-delay: 0.05s; }
+
+.features-grid.visible .feature-card:nth-child(2),
+.services-grid.visible .service-card:nth-child(2),
+.portfolio-grid.visible .project-card:nth-child(2),
+.why-me-grid.visible .why-me-card:nth-child(2),
+.process-timeline.visible .process-step:nth-child(2),
+.faq-list.visible .faq-item:nth-child(2)     { animation-delay: 0.10s; }
+
+.features-grid.visible .feature-card:nth-child(3),
+.services-grid.visible .service-card:nth-child(3),
+.portfolio-grid.visible .project-card:nth-child(3),
+.why-me-grid.visible .why-me-card:nth-child(3),
+.process-timeline.visible .process-step:nth-child(3),
+.faq-list.visible .faq-item:nth-child(3)     { animation-delay: 0.15s; }
+
+.features-grid.visible .feature-card:nth-child(4),
+.services-grid.visible .service-card:nth-child(4),
+.why-me-grid.visible .why-me-card:nth-child(4),
+.process-timeline.visible .process-step:nth-child(4),
+.faq-list.visible .faq-item:nth-child(4)     { animation-delay: 0.20s; }
+
+.features-grid.visible .feature-card:nth-child(5),
+.services-grid.visible .service-card:nth-child(5),
+.why-me-grid.visible .why-me-card:nth-child(5),
+.process-timeline.visible .process-step:nth-child(5),
+.faq-list.visible .faq-item:nth-child(5)     { animation-delay: 0.25s; }
+
+.features-grid.visible .feature-card:nth-child(6),
+.services-grid.visible .service-card:nth-child(6),
+.why-me-grid.visible .why-me-card:nth-child(6),
+.process-timeline.visible .process-step:nth-child(6),
+.faq-list.visible .faq-item:nth-child(6)     { animation-delay: 0.30s; }
+
+.features-grid.visible .feature-card:nth-child(7),
+.services-grid.visible .service-card:nth-child(7),
+.why-me-grid.visible .why-me-card:nth-child(7),
+.process-timeline.visible .process-step:nth-child(7),
+.faq-list.visible .faq-item:nth-child(7)     { animation-delay: 0.35s; }
+
+.features-grid.visible .feature-card:nth-child(8),
+.services-grid.visible .service-card:nth-child(8),
+.why-me-grid.visible .why-me-card:nth-child(8),
+.process-timeline.visible .process-step:nth-child(8),
+.faq-list.visible .faq-item:nth-child(8)     { animation-delay: 0.40s; }
+
+.features-grid.visible .feature-card:nth-child(n+9),
+.services-grid.visible .service-card:nth-child(n+9),
+.process-timeline.visible .process-step:nth-child(9),
+.faq-list.visible .faq-item:nth-child(n+9)   { animation-delay: 0.45s; }
+
+.faq-list.visible .faq-item:nth-child(10)    { animation-delay: 0.50s; }
+
+.why-grid.visible .why-item:nth-child(1)  { animation-delay: 0.04s; }
+.why-grid.visible .why-item:nth-child(2)  { animation-delay: 0.08s; }
+.why-grid.visible .why-item:nth-child(3)  { animation-delay: 0.12s; }
+.why-grid.visible .why-item:nth-child(4)  { animation-delay: 0.16s; }
+.why-grid.visible .why-item:nth-child(5)  { animation-delay: 0.20s; }
+.why-grid.visible .why-item:nth-child(6)  { animation-delay: 0.24s; }
+.why-grid.visible .why-item:nth-child(7)  { animation-delay: 0.28s; }
+.why-grid.visible .why-item:nth-child(8)  { animation-delay: 0.32s; }
+.why-grid.visible .why-item:nth-child(9)  { animation-delay: 0.36s; }
+.why-grid.visible .why-item:nth-child(10) { animation-delay: 0.40s; }
+
+@keyframes staggerIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ──────────────── ANIMATED COUNTER ──────────────── */
+.stat-number, .stat-mini-num {
+  transition: none; /* JS handles counting */
+}
+
+/* ──────────────── PAGE TRANSITION ──────────────── */
+body {
+  animation: pageFadeIn 0.5s ease forwards;
+}
+@keyframes pageFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ──────────────── BUTTON SHIMMER ──────────────── */
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transform: skewX(-20deg);
+  transition: none;
+}
+.btn-primary:hover::after {
+  animation: shimmer 0.7s ease forwards;
+}
+@keyframes shimmer {
+  from { left: -100%; }
+  to   { left: 200%; }
+}
+
+/* ──────────────── HERO ENTRANCE ──────────────── */
+.hero-badge       { animation: heroSlideUp 0.7s 0.2s ease both; }
+.hero-title       { animation: heroSlideUp 0.7s 0.3s ease both; }
+.hero-sub         { animation: heroSlideUp 0.7s 0.4s ease both; }
+.hero-desc        { animation: heroSlideUp 0.7s 0.5s ease both; }
+.hero-actions     { animation: heroSlideUp 0.7s 0.6s ease both; }
+.hero-stats       { animation: heroSlideUp 0.7s 0.7s ease both; }
+.hero-card-wrap   { animation: heroSlideRight 0.9s 0.4s ease both; }
+
+@keyframes heroSlideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroSlideRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ──────────────── FEATURE CARD ICON BOUNCE ──────────────── */
+.feature-card:hover .feature-icon-wrap {
+  animation: iconBounce 0.4s ease;
+}
+@keyframes iconBounce {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.2); }
+  70%  { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+/* ──────────────── PRICING CARD GLOW ──────────────── */
+.pricing-featured {
+  animation: pricingGlow 3s ease-in-out infinite;
+}
+@keyframes pricingGlow {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(26,86,219,0.08), 0 10px 40px rgba(0,0,0,0.10); }
+  50%       { box-shadow: 0 0 0 6px rgba(26,86,219,0.12), 0 20px 60px rgba(0,0,0,0.12); }
+}
+.pricing-featured:hover { animation: none; }
+
+/* ──────────────── BADGE DOT PULSE (Hero) ──────────────── */
+.badge-dot {
+  animation: pulse 2s ease infinite;
+}

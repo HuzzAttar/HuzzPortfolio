@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Huzefa Attar &mdash; Full-Stack Web Developer | Professional Websites for Businesses</title>
+  <meta name="description" content="I'm Huzefa Attar, a Full-Stack Web Developer from Ujjain, India. I help businesses build professional websites that attract more customers and grow online. Book a free consultation today." />
+  <meta name="keywords" content="web developer Ujjain, website development India, business website, full stack developer, professional website, small business website" />
+  <meta name="author" content="Huzefa Attar" />
+  <link rel="canonical" href="https://huzefadev.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Huzefa Attar &mdash; Professional Websites for Businesses" />
+  <meta property="og:description" content="I help businesses build professional websites that attract more customers and grow online. Full-Stack Web Developer based in Ujjain, India." />
+  <meta property="og:url" content="https://huzefadev.vercel.app/" />
+  <meta property="og:image" content="https://huzefadev.vercel.app/og-image.jpg" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Huzefa Attar &mdash; Full-Stack Web Developer" />
+  <meta name="twitter:description" content="Professional websites for businesses. Based in Ujjain, India." />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Huzefa Attar",
+    "jobTitle": "Full-Stack Web Developer",
+    "url": "https://huzefadev.vercel.app",
+    "email": "attarhuzefa828@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ujjain",
+      "addressRegion": "Madhya Pradesh",
+      "addressCountry": "IN"
+    },
+    "sameAs": ["https://www.linkedin.com/in/huzefa-attar-866a581a8", "https://www.instagram.com/_.huzz._04"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/dark.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">HG</div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo" aria-label="Huzefa Attar Home">
+        <span class="logo-mark">HG</span>
+        <span class="logo-name">Huzefa<span class="logo-accent">.</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#services" class="nav-link" id="nav-services">Services</a></li>
+        <li><a href="#portfolio" class="nav-link" id="nav-portfolio">Portfolio</a></li>
+        <li><a href="#process" class="nav-link" id="nav-process">Process</a></li>
+        <li><a href="#pricing" class="nav-link" id="nav-pricing">Pricing</a></li>
+        <li><a href="#testimonials" class="nav-link" id="nav-testimonials">Reviews</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-primary nav-cta" id="nav-cta-btn">Book Free Consultation</a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#home" class="mobile-nav-link" id="mob-home">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link" id="mob-about">About</a></li>
+        <li><a href="#services" class="mobile-nav-link" id="mob-services">Services</a></li>
+        <li><a href="#portfolio" class="mobile-nav-link" id="mob-portfolio">Portfolio</a></li>
+        <li><a href="#process" class="mobile-nav-link" id="mob-process">Process</a></li>
+        <li><a href="#pricing" class="mobile-nav-link" id="mob-pricing">Pricing</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link" id="mob-testimonials">Reviews</a></li>
+        <li><a href="#faq" class="mobile-nav-link" id="mob-faq">FAQ</a></li>
+        <li><a href="#contact" class="mobile-nav-link" id="mob-contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary mobile-cta">Book Free Consultation</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home" aria-label="Hero section">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+      <div class="hero-container">
+        <div class="hero-content fade-up">
+          <div class="hero-badge" id="hero-badge">
+            <span class="badge-dot"></span>
+            Available for New Projects
+          </div>
+
+          <h1 class="hero-title" id="hero-title">
+            Professional Websites<br/>
+            That Help Your<br/>
+            <span class="hero-gradient-text">Business Grow</span>
+          </h1>
+
+          <p class="hero-sub" id="hero-sub">Hi, I'm <strong>Huzefa Attar</strong>, a Full-Stack Web Developer.</p>
+
+          <p class="hero-desc" id="hero-desc">
+            I help businesses build professional websites that create a strong first impression, build customer trust, and make it easy for people to discover your business, explore your products or services, and contact you anytime.
+          </p>
+
+          <div class="hero-actions" id="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-large" id="hero-cta-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.61 16.92z"/></svg>
+              Let's Build Your Website
+            </a>
+            <a href="#portfolio" class="btn btn-outline btn-large" id="hero-cta-secondary">
+              View My Work
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-stats" id="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="3">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-up fade-up-delay" id="hero-visual" aria-hidden="true">
+          <div class="hero-card-wrap">
+            <div class="hero-mockup">
+              <div class="mockup-bar">
+                <span class="mockup-dot red"></span>
+                <span class="mockup-dot yellow"></span>
+                <span class="mockup-dot green"></span>
+                <div class="mockup-url">https://yourbusiness.com</div>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-nav-line"></div>
+                <div class="mockup-hero-block">
+                  <div class="mockup-title-block"></div>
+                  <div class="mockup-sub-block"></div>
+                  <div class="mockup-btn-block"></div>
+                </div>
+                <div class="mockup-cards-row">
+                  <div class="mockup-card-sm"></div>
+                  <div class="mockup-card-sm"></div>
+                  <div class="mockup-card-sm"></div>
+                </div>
+              </div>
+            </div>
+            <div class="float-badge float-badge-1">&#9889; Fast Loading</div>
+            <div class="float-badge float-badge-2">&#128241; Mobile Ready</div>
+            <div class="float-badge float-badge-3">&#128274; Secure</div>
+            <div class="float-badge float-badge-4">&#128205; SEO Ready</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" id="hero-scroll" aria-label="Scroll down">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===== WHY BUSINESSES CHOOSE ME ===== -->
+    <section class="section why-features" id="why-features" aria-label="Why businesses choose me">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Why Choose Me</span>
+          <h2 class="section-title">Everything Your Business Website Needs</h2>
+          <p class="section-subtitle">Every feature is designed to help your business look professional and get more customers.</p>
+        </div>
+
+        <div class="features-grid fade-up" id="features-grid">
+          <div class="feature-card" id="feat-1">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3 class="feature-title">Business-First Approach</h3>
+            <p class="feature-desc">I focus on what matters &mdash; helping your business attract more customers, not on complicated tech.</p>
+          </div>
+          <div class="feature-card" id="feat-2">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3 class="feature-title">Fast Loading Websites</h3>
+            <p class="feature-desc">Customers won't wait. Your website will load quickly so you never lose a potential customer.</p>
+          </div>
+          <div class="feature-card" id="feat-3">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3 class="feature-title">Mobile Friendly</h3>
+            <p class="feature-desc">Most people browse on their phones. Your website will look perfect on every screen size.</p>
+          </div>
+          <div class="feature-card" id="feat-4">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3 class="feature-title">Professional Design</h3>
+            <p class="feature-desc">A beautiful, clean website that makes your business look credible and trustworthy instantly.</p>
+          </div>
+          <div class="feature-card" id="feat-5">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </div>
+            <h3 class="feature-title">SEO Ready</h3>
+            <p class="feature-desc">Your website will be set up so Google can find you, bringing you more visitors organically.</p>
+          </div>
+          <div class="feature-card" id="feat-6">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3 class="feature-title">Secure Website</h3>
+            <p class="feature-desc">SSL security, safe contact forms, and protection from spam &mdash; your customers' data stays safe.</p>
+          </div>
+          <div class="feature-card" id="feat-7">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 class="feature-title">WhatsApp Integration</h3>
+            <p class="feature-desc">Customers can message you directly on WhatsApp right from your website with a single click.</p>
+          </div>
+          <div class="feature-card" id="feat-8">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="feature-title">Google Maps Integration</h3>
+            <p class="feature-desc">Help customers find your shop or office easily with an embedded Google Map on your site.</p>
+          </div>
+          <div class="feature-card" id="feat-9">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3 class="feature-title">Contact Forms</h3>
+            <p class="feature-desc">Customers can send you inquiries, book appointments, or request quotes directly from your website.</p>
+          </div>
+          <div class="feature-card" id="feat-10">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="feature-title">Custom Solutions</h3>
+            <p class="feature-desc">Whether you need a product catalogue, booking system, or anything unique &mdash; I build it for you.</p>
+          </div>
+          <div class="feature-card" id="feat-11">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="feature-title">Easy Maintenance</h3>
+            <p class="feature-desc">Need to update your business hours or add a new product? I keep it simple and handle it for you.</p>
+          </div>
+          <div class="feature-card" id="feat-12">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+            </div>
+            <h3 class="feature-title">Ongoing Support</h3>
+            <p class="feature-desc">I'm here even after launch. Get post-delivery support so your website keeps running smoothly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section about" id="about" aria-label="About Huzefa Attar">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual fade-up" id="about-visual">
+            <div class="about-photo-wrap">
+              <div class="about-photo-placeholder" aria-label="Huzefa Attar">
+                <div class="photo-initials">HA</div>
+                <div class="photo-ring"></div>
+                <div class="photo-ring-2"></div>
+              </div>
+              <div class="about-location-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Ujjain, Madhya Pradesh
+              </div>
+            </div>
+
+            <div class="about-stats-mini">
+              <div class="stat-mini" id="stat-mini-1">
+                <span class="stat-mini-num" data-target="3">0</span><span>+</span>
+                <span class="stat-mini-label">Projects</span>
+              </div>
+              <div class="stat-mini" id="stat-mini-2">
+                <span class="stat-mini-num" data-target="10">0</span><span>+</span>
+                <span class="stat-mini-label">Technologies</span>
+              </div>
+              <div class="stat-mini" id="stat-mini-3">
+                <span class="stat-mini-num" data-target="100">0</span><span>%</span>
+                <span class="stat-mini-label">Satisfaction</span>
+              </div>
+              <div class="stat-mini" id="stat-mini-4">
+                <span class="stat-mini-num">24/7</span>
+                <span class="stat-mini-label">Support</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text fade-up fade-up-delay" id="about-text">
+            <div class="section-header text-left">
+              <span class="section-label">Who I Am</span>
+              <h2 class="section-title">A Developer Who Understands Your Business</h2>
+            </div>
+
+            <p class="about-para">
+              Hi! I'm <strong>Huzefa Attar</strong>, a Full-Stack Web Developer based in Ujjain, Madhya Pradesh. I hold a B.Tech in Computer Science &amp; Engineering, and I genuinely enjoy helping businesses build a strong online presence.
+            </p>
+            <p class="about-para">
+              My mission is simple &mdash; <em>I help businesses build professional websites that increase trust, attract more customers, and support business growth.</em> Whether you're a small shop, a clinic, a restaurant, or a startup, I'd love to understand your needs and create something that truly works for you.
+            </p>
+            <p class="about-para">
+              Every project gets my full personal attention. I communicate clearly, work transparently, and only promise what I can deliver. When you work with me, you're not dealing with a large agency &mdash; you're working directly with the person building your website.
+            </p>
+
+            <div class="about-tags">
+              <span class="about-tag">React</span>
+              <span class="about-tag">Node.js</span>
+              <span class="about-tag">TypeScript</span>
+              <span class="about-tag">Python</span>
+              <span class="about-tag">FastAPI</span>
+              <span class="about-tag">PostgreSQL</span>
+              <span class="about-tag">MongoDB</span>
+              <span class="about-tag">Tailwind CSS</span>
+              <span class="about-tag">Vite</span>
+              <span class="about-tag">Git</span>
+            </div>
+
+            <a href="#contact" class="btn btn-primary" id="about-cta">Let's Talk About Your Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section class="section services" id="services" aria-label="Services">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">What I Build</span>
+          <h2 class="section-title">Services Designed for Your Business</h2>
+          <p class="section-subtitle">From a simple informational website to a full e-commerce platform &mdash; I've got you covered.</p>
+        </div>
+
+        <div class="services-grid fade-up" id="services-grid">
+          <div class="service-card service-card-featured" id="svc-1">
+            <div class="service-badge">Most Popular</div>
+            <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3 class="service-title">Business Website</h3>
+            <p class="service-desc">A complete, professional website for your business that tells your story, showcases your services, and helps customers contact you.</p>
+          </div>
+          <div class="service-card" id="svc-2">
+            <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16l4-2 4 2 4-2z"/></svg></div>
+            <h3 class="service-title">Landing Page</h3>
+            <p class="service-desc">A focused, single-page website designed to convert visitors into leads or customers quickly and effectively.</p>
+          </div>
+          <div class="service-card" id="svc-3">
+            <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+            <h3 class="service-title">Restaurant Website</h3>
+            <p class="service-desc">Showcase your menu, ambience, location, and let customers make table reservations or place orders online.</p>
+          </div>
+          <div class="service-card" id="svc-4">
+            <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+            <h3 class="service-title">Clinic / Medical Website</h3>
+            <p class="service-desc">Help patients find your clinic, book appointments, learn about your services, and contact your team easily.</p>
+          </div>
+          <div class="service-card" id="svc-5">
+            <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <h3 class="service-title">Travel Website</h3>
+            <p class="service-desc">Display tour packages, destinations, pricing, and let travelers book trips or inquire directly from your site.</p>
+          </div>
+          <div class="service-card" id="svc-6">
+            <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+            <h3 class="service-title">Educational Website</h3>
+            <p class="service-desc">For schools, coaching centers, and training institutes to display courses, faculty, and attract new students.</p>
+          </div>
+          <div class="service-card" id="svc-7">
+            <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+            <h3 class="service-title">Product Catalogue Website</h3>
+            <p class="service-desc">Show all your products in a beautiful, searchable online catalogue &mdash; perfect for manufacturers and retailers.</p>
+          </div>
+          <div class="service-card" id="svc-8">
+            <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+            <h3 class="service-title">Basic E-commerce Website</h3>
+            <p class="service-desc">Start selling online with a secure, easy-to-manage online store with payment integration and order management.</p>
+          </div>
+          <div class="service-card" id="svc-9">
+            <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.22"/></svg></div>
+            <h3 class="service-title">Website Redesign</h3>
+            <p class="service-desc">Already have a website but it looks outdated? I'll give it a modern, professional makeover that impresses visitors.</p>
+          </div>
+          <div class="service-card" id="svc-10">
+            <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+            <h3 class="service-title">Website Maintenance</h3>
+            <p class="service-desc">Keep your website updated, secure, and running smoothly with regular maintenance and content updates.</p>
+          </div>
+          <div class="service-card" id="svc-11">
+            <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+            <h3 class="service-title">Hosting &amp; Domain Setup</h3>
+            <p class="service-desc">I'll help you choose and set up the right domain name and hosting so your website is live and accessible worldwide.</p>
+          </div>
+          <div class="service-card" id="svc-12">
+            <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
+            <h3 class="service-title">SEO Setup</h3>
+            <p class="service-desc">Make your website discoverable on Google so people searching for your services can easily find your business.</p>
+          </div>
+        </div>
+
+        <div class="services-cta fade-up">
+          <p>Need something not listed above? I create <strong>custom solutions</strong> for any type of business.</p>
+          <a href="#contact" class="btn btn-primary" id="services-cta-btn">Discuss Your Requirements</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO SECTION ===== -->
+    <section class="section portfolio" id="portfolio" aria-label="Portfolio projects">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">My Work</span>
+          <h2 class="section-title">Real Projects, Real Results</h2>
+          <p class="section-subtitle">These are websites I've built. Click "Live Demo" to see them live on the internet.</p>
+        </div>
+
+        <div class="portfolio-grid fade-up" id="portfolio-grid">
+
+          <article class="project-card" id="proj-herbals" role="article">
+            <div class="project-visual">
+              <div class="project-mockup ayurvedic-theme">
+                <div class="proj-mock-bar">
+                  <span class="proj-dot"></span><span class="proj-dot"></span><span class="proj-dot"></span>
+                  <span class="proj-url">burhaniherbals.vercel.app</span>
+                </div>
+                <div class="proj-mock-body">
+                  <div class="proj-hero-block green-hero">
+                    <div class="proj-hero-text-block"></div>
+                    <div class="proj-hero-text-block short"></div>
+                    <div class="proj-hero-btn"></div>
+                  </div>
+                  <div class="proj-cards-row">
+                    <div class="proj-card-item green-card"></div>
+                    <div class="proj-card-item green-card"></div>
+                    <div class="proj-card-item green-card"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <a href="https://burhaniherbals.vercel.app" target="_blank" rel="noopener noreferrer" class="overlay-btn" id="overlay-herbals">View Live Site &rarr;</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="proj-tag">Ayurvedic Brand</span>
+                <span class="proj-tag">E-commerce</span>
+                <span class="proj-tag">Ujjain</span>
+              </div>
+              <h3 class="project-name">Burhani Herbals</h3>
+              <p class="project-challenge"><strong>Challenge:</strong> An 80+ year old Ayurvedic brand needed a premium online presence to reach customers across India.</p>
+              <p class="project-solution"><strong>Solution:</strong> Built a luxury product website with custom theme engine, product carousel, day/night mode, chatbot, and secure ordering system.</p>
+              <div class="project-tech">
+                <span class="tech-pill">Vanilla JS</span>
+                <span class="tech-pill">Custom CSS</span>
+                <span class="tech-pill">Web Components</span>
+                <span class="tech-pill">FastAPI</span>
+              </div>
+              <div class="project-outcome">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                Premium brand website now reaching customers pan-India
+              </div>
+              <div class="project-actions">
+                <a href="https://burhaniherbals.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-herbals-live">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" id="proj-collection" role="article">
+            <div class="project-visual">
+              <div class="project-mockup fashion-theme">
+                <div class="proj-mock-bar">
+                  <span class="proj-dot"></span><span class="proj-dot"></span><span class="proj-dot"></span>
+                  <span class="proj-url">burhanicollection.vercel.app</span>
+                </div>
+                <div class="proj-mock-body">
+                  <div class="proj-hero-block gold-hero">
+                    <div class="proj-hero-text-block"></div>
+                    <div class="proj-hero-text-block short"></div>
+                    <div class="proj-hero-btn gold-btn"></div>
+                  </div>
+                  <div class="proj-cards-row">
+                    <div class="proj-card-item gold-card"></div>
+                    <div class="proj-card-item gold-card"></div>
+                    <div class="proj-card-item gold-card"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <a href="https://burhanicollection.vercel.app" target="_blank" rel="noopener noreferrer" class="overlay-btn" id="overlay-collection">View Live Site &rarr;</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="proj-tag">Fashion E-commerce</span>
+                <span class="proj-tag">PWA</span>
+                <span class="proj-tag">Payments</span>
+              </div>
+              <h3 class="project-name">Burhani Collection</h3>
+              <p class="project-challenge"><strong>Challenge:</strong> A premium fashion brand needed a full-featured online store with seamless payment processing and mobile-app-like experience.</p>
+              <p class="project-solution"><strong>Solution:</strong> Built a React-powered PWA e-commerce platform with Razorpay payment integration, installable on mobile, fast &amp; secure.</p>
+              <div class="project-tech">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Vite</span>
+                <span class="tech-pill">Razorpay</span>
+                <span class="tech-pill">PWA</span>
+              </div>
+              <div class="project-outcome">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                Full online store with payment gateway, working 24/7
+              </div>
+              <div class="project-actions">
+                <a href="https://burhanicollection.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-collection-live">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" id="proj-portfolio" role="article">
+            <div class="project-visual">
+              <div class="project-mockup portfolio-theme">
+                <div class="proj-mock-bar">
+                  <span class="proj-dot"></span><span class="proj-dot"></span><span class="proj-dot"></span>
+                  <span class="proj-url">usportfolio.vercel.app</span>
+                </div>
+                <div class="proj-mock-body">
+                  <div class="proj-hero-block blue-hero">
+                    <div class="proj-hero-text-block"></div>
+                    <div class="proj-hero-text-block short"></div>
+                    <div class="proj-hero-btn blue-btn"></div>
+                  </div>
+                  <div class="proj-cards-row">
+                    <div class="proj-card-item blue-card"></div>
+                    <div class="proj-card-item blue-card"></div>
+                    <div class="proj-card-item blue-card"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <a href="https://usportfolio.vercel.app" target="_blank" rel="noopener noreferrer" class="overlay-btn" id="overlay-portfolio">View Live Site &rarr;</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="proj-tag">Portfolio</span>
+                <span class="proj-tag">Designer</span>
+                <span class="proj-tag">Dark Mode</span>
+              </div>
+              <h3 class="project-name">Umme Salma &mdash; Portfolio</h3>
+              <p class="project-challenge"><strong>Challenge:</strong> A UI/UX design student needed a professional portfolio to attract internship opportunities and showcase her Figma case studies.</p>
+              <p class="project-solution"><strong>Solution:</strong> Designed and built a clean, modern portfolio with dark/light mode, animated floating elements, skills section, and a featured Airpaz case study.</p>
+              <div class="project-tech">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Figma</span>
+              </div>
+              <div class="project-outcome">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                Portfolio live and attracting internship opportunities
+              </div>
+              <div class="project-actions">
+                <a href="https://usportfolio.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-portfolio-live">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="portfolio-cta fade-up">
+          <p>Want a website like these for your business?</p>
+          <a href="#contact" class="btn btn-primary" id="portfolio-cta-btn">Start Your Project Today</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY YOUR BUSINESS NEEDS A WEBSITE ===== -->
+    <section class="section why-website" id="why-website" aria-label="Why your business needs a website">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">The Truth</span>
+          <h2 class="section-title">Why Every Business Needs a Website Today</h2>
+          <p class="section-subtitle">In today's world, if your business is not online, you're invisible to most customers.</p>
+        </div>
+
+        <div class="why-grid fade-up" id="why-grid">
+          <div class="why-item" id="why-1"><div class="why-number">01</div><div class="why-content"><h3>People Search Online Before Buying</h3><p>Before visiting any shop or calling any business, most people search on Google first. Without a website, you don't show up at all.</p></div></div>
+          <div class="why-item" id="why-2"><div class="why-number">02</div><div class="why-content"><h3>A Website Builds Trust Instantly</h3><p>A professional website makes your business look credible. Customers feel more confident choosing a business that has a proper online presence.</p></div></div>
+          <div class="why-item" id="why-3"><div class="why-number">03</div><div class="why-content"><h3>Customers Can Contact You Anytime</h3><p>Your shop may close at 9 PM, but your website stays open 24/7. Customers can send inquiries, place orders, or find your phone number at midnight.</p></div></div>
+          <div class="why-item" id="why-4"><div class="why-number">04</div><div class="why-content"><h3>Your Business is Open 24&times;7 Online</h3><p>A website is your salesperson that never sleeps. It keeps presenting your business to potential customers around the clock, every single day.</p></div></div>
+          <div class="why-item" id="why-5"><div class="why-number">05</div><div class="why-content"><h3>Show Your Products &amp; Services Beautifully</h3><p>Instead of sending photos on WhatsApp, send a link to your website. Customers can explore everything you offer in one organized, beautiful place.</p></div></div>
+          <div class="why-item" id="why-6"><div class="why-number">06</div><div class="why-content"><h3>Reach Customers Outside Your Area</h3><p>A website removes geographical limits. Whether someone is in Delhi or Dubai, they can find your business, explore your offerings, and buy from you.</p></div></div>
+          <div class="why-item" id="why-7"><div class="why-number">07</div><div class="why-content"><h3>Look More Professional Than Competitors</h3><p>If a competitor has a website and you don't, customers will choose them. A professional website gives you the edge and makes you look established.</p></div></div>
+          <div class="why-item" id="why-8"><div class="why-number">08</div><div class="why-content"><h3>Compete With Larger Businesses</h3><p>A well-designed website levels the playing field. Your small business can look as professional and trustworthy as a big company online.</p></div></div>
+          <div class="why-item" id="why-9"><div class="why-number">09</div><div class="why-content"><h3>Receive More Inquiries &amp; Leads</h3><p>With a contact form, WhatsApp button, and your phone number clearly visible, more people will reach out &mdash; turning visitors into paying customers.</p></div></div>
+          <div class="why-item" id="why-10"><div class="why-number">10</div><div class="why-content"><h3>Grow Your Business Steadily</h3><p>Every business that went online saw growth. A website is not an expense &mdash; it's an investment that brings returns month after month.</p></div></div>
+        </div>
+
+        <div class="why-cta fade-up">
+          <a href="#contact" class="btn btn-primary btn-large" id="why-cta-btn">Start Your Online Journey Today</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESS SECTION ===== -->
+    <section class="section process" id="process" aria-label="My process">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">How I Work</span>
+          <h2 class="section-title">Simple, Transparent, Step-by-Step</h2>
+          <p class="section-subtitle">No confusion, no surprises. Here's exactly how your website goes from idea to live.</p>
+        </div>
+
+        <div class="process-timeline fade-up" id="process-timeline">
+          <div class="process-step" id="step-1"><div class="step-number">01</div><div class="step-content"><div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3 class="step-title">Understand Your Business</h3><p class="step-desc">We start with a free consultation where I listen to your business, your goals, and what you want your website to achieve. No technical jargon &mdash; just a friendly conversation.</p></div></div>
+          <div class="process-step" id="step-2"><div class="step-number">02</div><div class="step-content"><div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3 class="step-title">Requirement Discussion</h3><p class="step-desc">I gather all the details &mdash; number of pages, features needed, your brand colors, preferred style, and any specific requirements. Everything gets documented clearly.</p></div></div>
+          <div class="process-step" id="step-3"><div class="step-number">03</div><div class="step-content"><div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div><h3 class="step-title">Planning &amp; Structure</h3><p class="step-desc">I plan the website structure, decide which pages to include, and map out the content flow so your visitors can easily find what they're looking for.</p></div></div>
+          <div class="process-step" id="step-4"><div class="step-number">04</div><div class="step-content"><div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/><rect x="12" y="12" width="6" height="6" rx="1"/></svg></div><h3 class="step-title">Wireframe</h3><p class="step-desc">Before designing, I create a simple layout plan showing where each element will go. You review and approve before I move to visual design &mdash; no surprises.</p></div></div>
+          <div class="process-step" id="step-5"><div class="step-number">05</div><div class="step-content"><div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r="2.5"/><path d="M21 21l-6-6M6.5 15.5c-3.5-3.5-3.5-9 0-12.5"/><path d="M11.5 21c-3.5-3.5-3.5-9 0-12.5"/></svg></div><h3 class="step-title">UI Design</h3><p class="step-desc">I design the full visual look of your website &mdash; colors, fonts, images, icons &mdash; aligned with your brand. You get to see and approve the design before development begins.</p></div></div>
+          <div class="process-step" id="step-6"><div class="step-number">06</div><div class="step-content"><div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><h3 class="step-title">Development</h3><p class="step-desc">I build your website with clean, modern code. This is where the design comes to life &mdash; all features, forms, animations, and integrations are implemented.</p></div></div>
+          <div class="process-step" id="step-7"><div class="step-number">07</div><div class="step-content"><div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3 class="step-title">Testing</h3><p class="step-desc">I test your website thoroughly on all devices &mdash; phones, tablets, computers. All buttons, forms, and features are verified to work perfectly before launch.</p></div></div>
+          <div class="process-step" id="step-8"><div class="step-number">08</div><div class="step-content"><div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3 class="step-title">Launch</h3><p class="step-desc">Your website goes live! I set up your domain, hosting, SSL security, and make sure everything is working perfectly. You'll get a full walkthrough of your new website.</p></div></div>
+          <div class="process-step" id="step-9"><div class="step-number">09</div><div class="step-content"><div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg></div><h3 class="step-title">Ongoing Support</h3><p class="step-desc">After launch, I'm still here. Need to update content, fix an issue, or add a new feature? I provide continued support so your website stays fresh and effective.</p></div></div>
+        </div>
+
+        <div class="process-cta fade-up">
+          <a href="#contact" class="btn btn-primary" id="process-cta-btn">Start the Process Today</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING SECTION ===== -->
+    <section class="section pricing" id="pricing" aria-label="Pricing">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Investment</span>
+          <h2 class="section-title">Transparent Pricing, No Hidden Costs</h2>
+          <p class="section-subtitle">Choose a package that fits your business. Final pricing depends on your specific project requirements.</p>
+        </div>
+
+        <div class="pricing-grid fade-up" id="pricing-grid">
+          <div class="pricing-card" id="price-starter">
+            <div class="pricing-header">
+              <span class="pricing-label">Starter</span>
+              <div class="pricing-price"><span class="price-currency">&#8377;</span><span class="price-amount">8,000</span></div>
+              <span class="price-note">onwards</span>
+              <p class="pricing-tagline">Perfect for getting your business online</p>
+            </div>
+            <ul class="pricing-features">
+              <li class="feat-yes">Responsive Design (Mobile + Desktop)</li>
+              <li class="feat-yes">Up to 4 Pages</li>
+              <li class="feat-yes">Contact Form</li>
+              <li class="feat-yes">WhatsApp Integration</li>
+              <li class="feat-yes">Google Maps Integration</li>
+              <li class="feat-yes">Basic SEO Setup</li>
+              <li class="feat-yes">Hosting Guidance</li>
+              <li class="feat-yes">1 Month Support</li>
+              <li class="feat-no">Admin Dashboard</li>
+              <li class="feat-no">Payment Integration</li>
+              <li class="feat-no">Advanced SEO</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline" id="btn-starter">Get Started</a>
+          </div>
+
+          <div class="pricing-card pricing-featured" id="price-professional">
+            <div class="pricing-badge-wrap"><span class="pricing-popular">Most Popular</span></div>
+            <div class="pricing-header">
+              <span class="pricing-label">Professional</span>
+              <div class="pricing-price"><span class="price-currency">&#8377;</span><span class="price-amount">18,000</span></div>
+              <span class="price-note">onwards</span>
+              <p class="pricing-tagline">For businesses serious about growing online</p>
+            </div>
+            <ul class="pricing-features">
+              <li class="feat-yes">Everything in Starter</li>
+              <li class="feat-yes">Up to 8 Pages</li>
+              <li class="feat-yes">Professional Design System</li>
+              <li class="feat-yes">Animations &amp; Interactions</li>
+              <li class="feat-yes">Advanced SEO Setup</li>
+              <li class="feat-yes">Performance Optimized</li>
+              <li class="feat-yes">Social Media Integration</li>
+              <li class="feat-yes">Blog / News Section</li>
+              <li class="feat-yes">3 Months Support</li>
+              <li class="feat-no">Payment Integration</li>
+              <li class="feat-no">Custom Admin Dashboard</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary" id="btn-professional">Get Started</a>
+          </div>
+
+          <div class="pricing-card" id="price-enterprise">
+            <div class="pricing-header">
+              <span class="pricing-label">Enterprise</span>
+              <div class="pricing-price"><span class="price-currency">&#8377;</span><span class="price-amount">35,000</span></div>
+              <span class="price-note">onwards</span>
+              <p class="pricing-tagline">Full-featured platform for growing businesses</p>
+            </div>
+            <ul class="pricing-features">
+              <li class="feat-yes">Everything in Professional</li>
+              <li class="feat-yes">Unlimited Pages</li>
+              <li class="feat-yes">E-commerce / Product Store</li>
+              <li class="feat-yes">Payment Gateway Integration</li>
+              <li class="feat-yes">Custom Admin Dashboard</li>
+              <li class="feat-yes">User Login / Registration</li>
+              <li class="feat-yes">Analytics Integration</li>
+              <li class="feat-yes">Advanced Performance</li>
+              <li class="feat-yes">Custom Business Features</li>
+              <li class="feat-yes">Priority Support</li>
+              <li class="feat-yes">6 Months Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline" id="btn-enterprise">Get Started</a>
+          </div>
+        </div>
+
+        <div class="pricing-note fade-up">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <p>These are starting prices. The final cost depends on your specific requirements, number of pages, and features needed. <strong>Book a free consultation</strong> and I'll give you an exact quote based on your project.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY WORK WITH ME ===== -->
+    <section class="section why-me" id="why-me" aria-label="Why work with me">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Why Choose Me</span>
+          <h2 class="section-title">What Makes Working With Me Different</h2>
+          <p class="section-subtitle">When you hire me, you get more than just a website &mdash; you get a dedicated partner.</p>
+        </div>
+
+        <div class="why-me-grid fade-up" id="why-me-grid">
+          <div class="why-me-card" id="wm-1"><div class="wm-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Personalized Service</h3><p>You work directly with me &mdash; not a team of strangers. I give every project my full personal attention and care.</p></div>
+          <div class="why-me-card" id="wm-2"><div class="wm-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Clear Communication</h3><p>I explain everything in simple language. You'll always know what's happening, what the next step is, and when it's done.</p></div>
+          <div class="why-me-card" id="wm-3"><div class="wm-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h3>Business Understanding</h3><p>I focus on your business goals first. A website is only valuable if it helps your business &mdash; that's always my priority.</p></div>
+          <div class="why-me-card" id="wm-4"><div class="wm-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><h3>Modern Technology</h3><p>I use the latest, proven technologies that ensure your website is fast, secure, and built to last for years.</p></div>
+          <div class="why-me-card" id="wm-5"><div class="wm-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><h3>Professional Quality</h3><p>I take pride in delivering work that looks and works beautifully. No cutting corners &mdash; your website reflects my best work.</p></div>
+          <div class="why-me-card" id="wm-6"><div class="wm-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Reliable Support</h3><p>I'm available on WhatsApp and email for support. If something breaks, I fix it promptly. Your business never stays down.</p></div>
+          <div class="why-me-card" id="wm-7"><div class="wm-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>Transparent Pricing</h3><p>No surprise bills. I discuss costs upfront, and you agree to the price before I start working. What I quote is what you pay.</p></div>
+          <div class="why-me-card" id="wm-8"><div class="wm-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><h3>Long-Term Partnership</h3><p>I'm not here just to deliver a project and disappear. I want your business to succeed online &mdash; and I'll be with you for the long run.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section testimonials" id="testimonials" aria-label="Client testimonials">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Client Words</span>
+          <h2 class="section-title">What Clients Say About Working With Me</h2>
+        </div>
+
+        <div class="testimonials-wrap fade-up" id="testimonials-wrap">
+          <div class="testimonials-track" id="testimonials-track">
+
+            <div class="testimonial-card" id="test-1">
+              <div class="test-stars" aria-label="5 star rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="test-text">"Huzefa built our Burhani Herbals website and the results exceeded our expectations. The design perfectly captures our 80-year heritage. Our customers love the online store and we're now getting orders from all over India."</p>
+              <div class="test-author">
+                <div class="test-avatar" style="background: linear-gradient(135deg, #059669, #10b981);">SB</div>
+                <div class="test-info">
+                  <div class="test-name">Saifuddin Brothers</div>
+                  <div class="test-role">Burhani Herbals, Ujjain</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card" id="test-2">
+              <div class="test-stars" aria-label="5 star rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="test-text">"He built my portfolio website and I couldn't be happier. It's clean, modern, and professional. I've already gotten internship interview calls because of how my portfolio looks online. Very responsive throughout the project."</p>
+              <div class="test-author">
+                <div class="test-avatar" style="background: linear-gradient(135deg, #2563eb, #7c3aed);">US</div>
+                <div class="test-info">
+                  <div class="test-name">Umme Salma Panched</div>
+                  <div class="test-role">UI/UX Designer, Indore</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card" id="test-3">
+              <div class="test-stars" aria-label="5 star rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="test-text">"The Burhani Collection website is exactly what we needed. Full payment integration, beautiful product display, and it even works as a mobile app. Our online sales have started coming in since launch. Highly recommend!"</p>
+              <div class="test-author">
+                <div class="test-avatar" style="background: linear-gradient(135deg, #d97706, #f59e0b);">BC</div>
+                <div class="test-info">
+                  <div class="test-name">Burhani Collection Team</div>
+                  <div class="test-role">Fashion Brand, Ujjain</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card" id="test-4">
+              <div class="test-stars" aria-label="5 star rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="test-text">"What I appreciated most was how Huzefa communicated everything so clearly. He never used technical language I didn't understand. The website was delivered on time and exactly as we discussed. A true professional."</p>
+              <div class="test-author">
+                <div class="test-avatar" style="background: linear-gradient(135deg, #0891b2, #06b6d4);">RM</div>
+                <div class="test-info">
+                  <div class="test-name">Rahul Mehta</div>
+                  <div class="test-role">Retail Business Owner, Indore</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="testimonials-controls">
+            <button class="test-btn test-prev" id="test-prev" aria-label="Previous testimonial">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="test-dots" id="test-dots"></div>
+            <button class="test-btn test-next" id="test-next" aria-label="Next testimonial">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="section faq" id="faq" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Common Questions</span>
+          <h2 class="section-title">Questions Business Owners Usually Ask</h2>
+          <p class="section-subtitle">I understand you may have concerns before starting. Here are honest answers to the most common questions.</p>
+        </div>
+
+        <div class="faq-list fade-up" id="faq-list">
+          <div class="faq-item" id="faq-1"><button class="faq-question" aria-expanded="false" id="faq-btn-1"><span>How much does a website cost?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer" id="faq-ans-1"><p>The cost depends on how many pages you need, what features you want, and how complex the design is. A basic business website typically starts at &#8377;8,000 and goes up depending on your requirements. I'll give you a clear, exact quote after understanding your project &mdash; no hidden costs ever.</p></div></div>
+          <div class="faq-item" id="faq-2"><button class="faq-question" aria-expanded="false" id="faq-btn-2"><span>How long does it take to build my website?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer" id="faq-ans-2"><p>A simple website typically takes 1&ndash;2 weeks. A larger website with more pages and features may take 3&ndash;4 weeks. During our consultation, I'll give you an accurate timeline based on your project.</p></div></div>
+          <div class="faq-item" id="faq-3"><button class="faq-question" aria-expanded="false" id="faq-btn-3"><span>Can you redesign my existing website?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer" id="faq-ans-3"><p>Absolutely! If your current website looks outdated or isn't performing well, I can redesign it with a fresh, modern look. I'll analyze what's currently on your site, understand your business goals, and create an improved version that looks and works much better.</p></div></div>
+          <div class="faq-item" id="faq-4"><button class="faq-question" aria-expanded="false" id="faq-btn-4"><span>Will my website work on mobile phones?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer" id="faq-ans-4"><p>Yes, 100%. Every website I build is fully responsive, meaning it looks and works perfectly on all devices &mdash; smartphones, tablets, and computers. Since most people browse on phones today, mobile-friendly design is a priority in every project I take up.</p></div></div>
+          <div class="faq-item" id="faq-5"><button class="faq-question" aria-expanded="false" id="faq-btn-5"><span>Can customers contact me through the website?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer" id="faq-ans-5"><p>Yes! I add a contact form, WhatsApp button, phone number, and email to your website so customers can reach you easily in multiple ways. I can also set up a WhatsApp chat button so customers can message you instantly.</p></div></div>
+          <div class="faq-item" id="faq-6"><button class="faq-question" aria-expanded="false" id="faq-btn-6"><span>Can my customers place orders or make payments online?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer" id="faq-ans-6"><p>Yes! I can integrate payment gateways like Razorpay or PayU so customers can pay directly on your website using UPI, cards, or net banking. This is included in the Enterprise plan and can be added to any package.</p></div></div>
+          <div class="faq-item" id="faq-7"><button class="faq-question" aria-expanded="false" id="faq-btn-7"><span>Do you provide domain and hosting?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer" id="faq-ans-7"><p>I provide full guidance on choosing and setting up your domain name (e.g., yourbusiness.com) and hosting. I help you buy from trusted providers and set everything up correctly. The domain and hosting fees are paid directly to the provider by you &mdash; I help with the process at no extra charge.</p></div></div>
+          <div class="faq-item" id="faq-8"><button class="faq-question" aria-expanded="false" id="faq-btn-8"><span>Can I update the website content myself later?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer" id="faq-ans-8"><p>Yes. For projects that need frequent updates, I can set up a simple content management system that lets you edit text, images, and products yourself &mdash; no coding knowledge needed. For minor updates, you can also just send me the changes and I'll update them for you quickly.</p></div></div>
+          <div class="faq-item" id="faq-9"><button class="faq-question" aria-expanded="false" id="faq-btn-9"><span>What kind of support do you provide after launch?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer" id="faq-ans-9"><p>Every package includes post-launch support. If something breaks, stops working, or needs adjustment, I fix it promptly. I'm reachable on WhatsApp and email. For ongoing needs beyond the included support period, I offer affordable maintenance packages.</p></div></div>
+          <div class="faq-item" id="faq-10"><button class="faq-question" aria-expanded="false" id="faq-btn-10"><span>How do we get started?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer" id="faq-ans-10"><p>Simply fill out the contact form below or WhatsApp me directly. Tell me a little about your business and what you need. I'll get back to you within 24 hours and we'll schedule a free consultation call &mdash; completely free, no obligation.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact" id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Let's Connect</span>
+          <h2 class="section-title">Ready to Grow Your Business Online?</h2>
+          <p class="section-subtitle">Tell me about your business and what you need. I'll get back to you within 24 hours.</p>
+        </div>
+
+        <div class="contact-grid fade-up" id="contact-grid">
+          <div class="contact-form-wrap" id="contact-form-wrap">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name *</label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Rajesh Kumar" required />
+                  <span class="form-error" id="err-name"></span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-business" class="form-label">Business Name</label>
+                  <input type="text" id="contact-business" name="business" class="form-input" placeholder="e.g. Raj Medical Store" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-phone" class="form-label">Phone / WhatsApp *</label>
+                  <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="+91 98765 43210" required />
+                  <span class="form-error" id="err-phone"></span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Address</label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="you@example.com" />
+                  <span class="form-error" id="err-email"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-btype" class="form-label">Business Type</label>
+                  <select id="contact-btype" name="businessType" class="form-input form-select">
+                    <option value="">Select your business type</option>
+                    <option>Retail Shop</option><option>Restaurant / Cafe</option><option>Medical / Clinic</option>
+                    <option>Gym / Fitness</option><option>Salon / Beauty</option><option>Educational Institute</option>
+                    <option>Travel Agency</option><option>Manufacturer</option><option>Startup</option>
+                    <option>Professional / Freelancer</option><option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="contact-project" class="form-label">Project Type</label>
+                  <select id="contact-project" name="projectType" class="form-input form-select">
+                    <option value="">What do you need?</option>
+                    <option>New Business Website</option><option>Landing Page</option><option>E-commerce / Online Store</option>
+                    <option>Website Redesign</option><option>Portfolio Website</option><option>Restaurant Website</option>
+                    <option>Clinic Website</option><option>Website Maintenance</option><option>Custom Solution</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-budget" class="form-label">Budget Range</label>
+                <select id="contact-budget" name="budget" class="form-input form-select">
+                  <option value="">Select your budget range</option>
+                  <option>Under &#8377;10,000</option><option>&#8377;10,000 &ndash; &#8377;20,000</option>
+                  <option>&#8377;20,000 &ndash; &#8377;40,000</option><option>&#8377;40,000 &ndash; &#8377;80,000</option>
+                  <option>Above &#8377;80,000</option><option>Not sure yet</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Tell Me About Your Business *</label>
+                <textarea id="contact-message" name="message" class="form-input form-textarea" placeholder="Tell me what kind of website you need, what your business does, and any specific requirements..." rows="5" required></textarea>
+                <span class="form-error" id="err-message"></span>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-large" id="btn-submit">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  Send My Inquiry
+                </button>
+                <a href="https://wa.me/918815533034?text=Hi%20Huzefa!%20I%20want%20to%20discuss%20building%20a%20website%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="btn-whatsapp">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                  Chat on WhatsApp
+                </a>
+              </div>
+              <div class="form-success" id="form-success" aria-live="polite">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <p>Thank you! I'll get back to you within 24 hours.</p>
+              </div>
+            </form>
+          </div>
+
+          <div class="contact-info" id="contact-info">
+            <div class="contact-info-card" id="cinfo-wa">
+              <div class="cinfo-icon cinfo-green">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              </div>
+              <div class="cinfo-text">
+                <span class="cinfo-label">WhatsApp</span>
+                <a href="https://wa.me/918815533034" target="_blank" rel="noopener noreferrer" class="cinfo-value">+91 8815533034</a>
+              </div>
+            </div>
+            <div class="contact-info-card" id="cinfo-email">
+              <div class="cinfo-icon cinfo-blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="cinfo-text">
+                <span class="cinfo-label">Email</span>
+                <a href="mailto:attarhuzefa828@gmail.com" class="cinfo-value">attarhuzefa828@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-info-card" id="cinfo-loc">
+              <div class="cinfo-icon cinfo-purple">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="cinfo-text">
+                <span class="cinfo-label">Location</span>
+                <span class="cinfo-value">Ujjain, Madhya Pradesh, India</span>
+              </div>
+            </div>
+            <div class="contact-info-card" id="cinfo-hours">
+              <div class="cinfo-icon cinfo-orange">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="cinfo-text">
+                <span class="cinfo-label">Business Hours</span>
+                <span class="cinfo-value">Mon &ndash; Sat, 9 AM &ndash; 8 PM IST</span>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://www.linkedin.com/in/huzefa-attar-866a581a8?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-link" id="social-linkedin" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://www.instagram.com/_.huzz._04?igsh=Z3luMHcyZGR2emNm" target="_blank" rel="noopener noreferrer" class="social-link" id="social-instagram" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                Instagram
+              </a>
+            </div>
+
+            <div class="contact-promise">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <span>I respond within 24 hours. Free consultation, no obligation.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-mark">HA</span>
+            <span class="logo-name">Huzefa<span class="logo-accent">.</span></span>
+          </div>
+          <p class="footer-tagline">Helping businesses build a strong online presence through professional, modern websites.</p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/huzefa-attar-866a581a8?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="footer-social" id="footer-linkedin" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://www.instagram.com/_.huzz._04?igsh=Z3luMHcyZGR2emNm" target="_blank" rel="noopener noreferrer" class="footer-social" id="footer-instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://wa.me/918815533034" target="_blank" rel="noopener noreferrer" class="footer-social" id="footer-wa" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            </a>
+            <a href="mailto:attarhuzefa828@gmail.com" class="footer-social" id="footer-email" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home" id="footer-link-home">Home</a></li>
+            <li><a href="#about" id="footer-link-about">About</a></li>
+            <li><a href="#services" id="footer-link-services">Services</a></li>
+            <li><a href="#portfolio" id="footer-link-portfolio">Portfolio</a></li>
+            <li><a href="#process" id="footer-link-process">My Process</a></li>
+            <li><a href="#pricing" id="footer-link-pricing">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services" id="footer-svc-1">Business Website</a></li>
+            <li><a href="#services" id="footer-svc-2">Restaurant Website</a></li>
+            <li><a href="#services" id="footer-svc-3">Clinic Website</a></li>
+            <li><a href="#services" id="footer-svc-4">E-commerce Website</a></li>
+            <li><a href="#services" id="footer-svc-5">Website Redesign</a></li>
+            <li><a href="#services" id="footer-svc-6">SEO Setup</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Ujjain, Madhya Pradesh
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:attarhuzefa828@gmail.com">attarhuzefa828@gmail.com</a>
+            </li>
+            <li><a href="#contact" id="footer-contact">Book Free Consultation</a></li>
+            <li><a href="#faq" id="footer-faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Huzefa Attar. All rights reserved. Made with &#10084;&#65039; in Ujjain, India.</p>
+        <div class="footer-bottom-links">
+          <a href="#" id="footer-privacy">Privacy Policy</a>
+          <a href="#" id="footer-terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="mobile-sticky-cta" id="mobile-sticky-cta">
+    <a href="#contact" class="btn btn-primary" id="mobile-sticky-btn">Book Free Consultation</a>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918815533034?text=Hi%20Huzefa!%20I%20want%20to%20discuss%20building%20a%20website%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="wa-float" id="wa-float" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- Cleanup temp file -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
