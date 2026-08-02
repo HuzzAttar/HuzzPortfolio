@@ -3,16 +3,16 @@
    ========================================================= */
 
 [data-theme="dark"] {
-  --bg:           #080e1a;
-  --bg-secondary: #0f172a;
-  --bg-card:      #111827;
-  --bg-glass:     rgba(8,14,26,0.85);
-  --border:       #1e293b;
-  --border-card:  #1e293b;
+  --bg:           #181a18;
+  --bg-secondary: #1d211d;
+  --bg-card:      rgba(36, 40, 36, 0.65);
+  --bg-glass:     rgba(24, 26, 24, 0.85);
+  --border:       #353c35;
+  --border-card:  rgba(53, 60, 53, 0.5);
 
-  --text-1: #f1f5f9;
-  --text-2: #cbd5e1;
-  --text-3: #64748b;
+  --text-1: #f4ebd8;
+  --text-2: #c5c0b1;
+  --text-3: #8a867a;
 
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
   --shadow-md: 0 4px 16px rgba(0,0,0,0.4), 0 2px 8px rgba(0,0,0,0.3);
@@ -157,3 +157,7 @@
 /* About photo placeholder ring */
 [data-theme="dark"] .photo-ring  { border-color: rgba(26,86,219,0.15); }
 [data-theme="dark"] .photo-ring-2 { border-color: rgba(26,86,219,0.08); }
+/* Ambient Background Overrides for Dark Mode */
+[data-theme="dark"] .orb-1 { background: rgba(44, 57, 44, 0.5); }
+[data-theme="dark"] .orb-2 { background: rgba(139, 90, 43, 0.3); }
+[data-theme="dark"] .orb-3 { background: rgba(95, 106, 91, 0.4); } /* Mossy grey */
