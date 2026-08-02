@@ -223,6 +223,7 @@ input, select, textarea { font-family: inherit; }
   padding: 0 24px;
   height: 100%;
   display: flex; align-items: center; gap: 32px;
+  justify-content: space-between;
 }
 
 .nav-logo {
@@ -266,6 +267,9 @@ input, select, textarea { font-family: inherit; }
 .nav-actions {
   display: flex; align-items: center; gap: 12px;
   flex-shrink: 0;
+}
+.nav-theme-toggle {
+  display: none; /* Hidden on mobile */
 }
 
 .theme-toggle {
@@ -334,7 +338,13 @@ input, select, textarea { font-family: inherit; }
   transition: all var(--transition);
 }
 .mobile-nav-link:hover { color: var(--secondary); background: rgba(26,86,219,0.07); }
-.mobile-cta { margin-top: 16px; text-align: center; justify-content: center; }
+.mobile-cta { flex: 1; text-align: center; justify-content: center; }
+.mobile-menu-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
 
 /* ──────────────── HERO ──────────────── */
 .hero {
@@ -1753,6 +1763,7 @@ a.cinfo-value:hover { color: var(--secondary); }
   .nav-links { display: flex; }
   .nav-hamburger { display: none; }
   .nav-cta { display: inline-flex; }
+  .nav-theme-toggle { display: flex; }
 
   /* Hero */
   .hero-container { padding: 80px 32px; }

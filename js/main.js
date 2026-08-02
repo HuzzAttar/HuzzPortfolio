@@ -13,22 +13,24 @@ window.addEventListener('load', () => {
   }, 1500);
 });
 
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ THEME TOGGLE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ──────────────── THEME TOGGLE ──────────────── */
 const html        = document.documentElement;
-const themeToggle = document.getElementById('theme-toggle');
+const themeToggles = document.querySelectorAll('.theme-toggle');
 
-// Load saved preference
+// Check local storage
 const savedTheme = localStorage.getItem('hg-theme') || 'light';
 html.setAttribute('data-theme', savedTheme);
 
-themeToggle?.addEventListener('click', () => {
-  const current = html.getAttribute('data-theme');
-  const next    = current === 'light' ? 'dark' : 'light';
-  html.setAttribute('data-theme', next);
-  localStorage.setItem('hg-theme', next);
+themeToggles.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('hg-theme', next);
+  });
 });
 
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ NAVBAR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ──────────────── NAVBAR ──────────────── */
 const navbar      = document.getElementById('navbar');
 const hamburger   = document.getElementById('nav-hamburger');
 const mobileMenu  = document.getElementById('mobile-menu');
